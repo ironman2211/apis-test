@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .category h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .endpoint {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .method {
+            font-weight: bold;
+            color: #333;
+        }
+        .url {
+            margin-bottom: 5px;
+        }
+        .description {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventory Management API Documentation</h1>
+
+        <div class="category">
+            <h2>Products</h2>
+            <div class="endpoint">
+                <div class="method">POST</div>
+                <div class="url">/products</div>
+                <div class="description">Add a new product to the inventory.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">GET</div>
+                <div class="url">/products/{productId}</div>
+                <div class="description">Retrieve details of a specific product by its ID.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">PUT</div>
+                <div class="url">/products/{productId}</div>
+                <div class="description">Update details of an existing product.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">DELETE</div>
+                <div class="url">/products/{productId}</div>
+                <div class="description">Remove a product from the inventory.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">GET</div>
+                <div class="url">/products</div>
+                <div class="description">List all products</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">PATCH</div>
+                <div class="url">/products/{productId}/adjust</div>
+                <div class="description">Update Product quantity </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Categories</h2>
+            <div class="endpoint">
+                <div class="method">POST</div>
+                <div class="url">/categories</div>
+                <div class="description">Add a new category to the system.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">GET</div>
+                <div class="url">/categories</div>
+                <div class="description">Retrieve a list of all categories.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">PUT</div>
+                <div class="url">/categories/{categoryId}</div>
+                <div class="description">Update details of an existing category.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">DELETE</div>
+                <div class="url">/categories/{categoryId}</div>
+                <div class="description">Delete category.</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Suppliers</h2>
+            <div class="endpoint">
+                <div class="method">POST</div>
+                <div class="url">/suppliers</div>
+                <div class="description">Add a new supplier to the system.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">GET</div>
+                <div class="url">/suppliers</div>
+                <div class="description">Retrieve a list of all suppliers.</div>
+            </div>
+            <div class="endpoint">
+                <div class="method">PUT</div>
+                <div class="url">/suppliers/{supplierId}</div>
+                <div class="description">Update details of an existing supplier.</div>
+            </div>
+        </div>
+
+        <!-- Add more categories and endpoints as needed -->
+
+    </div>
+</body>
+</html>
